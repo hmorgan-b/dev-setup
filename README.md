@@ -64,17 +64,22 @@ Once downloaded, the following commands can be used:
 - Looks at the current directory, prepends the name of the current directory to the Dockerfile image name (as specified in docker-compose.yml, or similar)
 - Builds images and runs containers all in one command
 
+`docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container-name>`
+
+- Used to get IP address of a Docker container
+
 <a name="local-instances"></a>
 ## Local Instances of Applications/Tools Used for Testing
 ### RabbitMQ
 RabbitMQ is an open-source messaging service. It accepts, stores, and forwards binary blobs of data (messages).
 - Set up via the [rabbitmq docker image](https://hub.docker.com/_/rabbitmq)
-- Also need to setup the management plugin, which is just a browswer-based UI to manage Rabbitmq notes and clusters
+- Also need to setup the management plugin, which is just a browswer-based UI to manage RabbitMQ nodes and clusters
+
 Both can be set up together using the command: 
 
 `docker run --name <container-name> -d --hostname <hostname> -p <localport#:dockerport#> <image-name>`
 
-For example, I used the following command to setup a test instance of rabbitmq running in a Docker container
+For example, I used the following command to setup a test instance of RabbitMQ running in a Docker container
 
 `docker run --name test-rabbit -d --hostname my-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management`
 - Spins up a Docker container from the rabbitmq:3-management image
