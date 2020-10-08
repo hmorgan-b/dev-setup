@@ -36,7 +36,7 @@ D&A uses the following cloud-based tools:
 
 <a name="docker"></a>
 ## Docker
-Download docker for mac for containeriation of applications and resources needed to run applications.
+Download docker for mac for containerization of applications and resources needed to run applications. A Docker image serves as a blueprint for creating containers that will host a certain application or service.
 Once downloaded, the following commands can be used:
 
 `docker ps -a`
@@ -45,7 +45,7 @@ Once downloaded, the following commands can be used:
 
 `docker images`
 
-- Lists the most recently created docker images (created from Dockerfiles or downloaded)
+- Lists the most recently created docker repositories containing images (created from Dockerfiles or downloaded)
 
 `docker build --tag [image-name] [docker-file-location]`
 
@@ -53,7 +53,7 @@ Once downloaded, the following commands can be used:
 
 `docker run [image-name] -p 8080:80 --name [hello] -d`
 
-- Runs a Docker container derived from image (image-name)
+- Creates and runs a Docker container derived from image (image-name)
 - Maps local port 8080 to port 80 of container, to expose the container to the outside world and allow access from a browser. In this case, navigate in a browser to localhost:8080 to see application running
 - The -d tag tells the container to run as a process in the backgound 
 
