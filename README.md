@@ -70,6 +70,16 @@ Once downloaded, the following commands can be used:
 RabbitMQ is an open-source messaging service. It accepts, stores, and forwards binary blobs of data (messages).
 - Set up via the [rabbitmq docker image](https://hub.docker.com/_/rabbitmq)
 - Also need to setup the management plugin, which is just a browswer-based UI to manage Rabbitmq notes and clusters
+Both can be set up together using the command: 
+
+`docker run --name <container-name> -d --hostname <hostname> -p <localport#:dockerport#> <image-name>`
+
+For example, I used the following command to setup a test instance of rabbitmq running in a Docker container
+
+`docker run --name test-rabbit -d --hostname my-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management`
+- Spins up a Docker container from the rabbitmq:3-management image
+- Port 15672 in the Docker container is mapped to the host's port 15672, which is the port used for the RabbitMQ Management site
+- Port 5672 is the port used for RabbitMQ client connections
 
 ### Postgres
 - Set up via the [postgres docker image](https://hub.docker.com/_/postgres)
