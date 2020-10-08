@@ -6,6 +6,8 @@ Install or setup the following elements for complete local development environme
 2. [Git/Github](#git-github)
 3. [Cloud Resources](#cloud)
 4. [Docker](#docker)
+5. [Local Instances of Applications/Tools for Testing](#local-instances)
+6. [Python Development](#python-dev)
 
 
 ## Editors
@@ -58,4 +60,19 @@ Once downloaded, the following commands can be used:
 - This command "composes" all of the Docker containers together
 - Looks at the current directory, prepends the name of the current directory to the Dockerfile image name (as specified in docker-compose.yml, or similar)
 - Builds images and runs containers all in one command
+
+## Local Instances of Applications/Tools Used for Testing
+### RabbitMQ
+RabbitMQ is an open-source messaging service. It accepts, stores, and forwards binary blobs of data (messages).
+- Set up via the [rabbitmq docker image](https://hub.docker.com/_/rabbitmq)
+- Also need to setup the management plugin, which is just a browswer-based UI to manage Rabbitmq notes and clusters
+
+### Postgres
+- Set up via the [postgres docker image](https://hub.docker.com/_/postgres)
+
+### SonarQube
+- Set up via the [sonarqube docker image](https://hub.docker.com/_/sonarqube)
+
+## Python Development
+
 
