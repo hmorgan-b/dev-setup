@@ -7,9 +7,9 @@ Install or setup the following elements for complete local development environme
 3. [Cloud Resources](#cloud-stuff)
 4. [Docker](#docker)
 5. [Local Instances of Applications/Tools for Testing](#local-instances)
-6. [Python Development](#python-development)
+6. [Python Development](#python-devt)
 
-
+<a name="editors"></a>
 ## Editors
 **vim**
 - Comes pre-installed on mac, just need to customize to your liking 
@@ -28,11 +28,13 @@ Install or setup the following elements for complete local development environme
 - Upload SSH public key to allow SSH terminal access
 - See Confluence pages for version control workflow, including branch naming protocols, pull requests, and code review process
 
+<a name="cloud-stuff"></a>
 ## Cloud Stuff
 D&A uses the following cloud-based tools:
 - Azure: blob storage, virtual machines, other resources
 - Postgres/Citus: cloud storage database used by applications (dev, stage, and prod instances)
 
+<a name="docker"></a>
 ## Docker
 Download docker for mac for containeriation of applications and resources needed to run applications.
 Once downloaded, the following commands can be used:
@@ -62,6 +64,7 @@ Once downloaded, the following commands can be used:
 - Looks at the current directory, prepends the name of the current directory to the Dockerfile image name (as specified in docker-compose.yml, or similar)
 - Builds images and runs containers all in one command
 
+<a name="local-instances"></a>
 ## Local Instances of Applications/Tools Used for Testing
 ### RabbitMQ
 RabbitMQ is an open-source messaging service. It accepts, stores, and forwards binary blobs of data (messages).
@@ -74,6 +77,7 @@ RabbitMQ is an open-source messaging service. It accepts, stores, and forwards b
 ### SonarQube
 - Set up via the [sonarqube docker image](https://hub.docker.com/_/sonarqube)
 
+<a name="python-dev"></a>
 ## Python Development
 
 
