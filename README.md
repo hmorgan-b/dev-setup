@@ -33,5 +33,15 @@ D&A uses the following cloud-based tools:
 ## Docker
 Download docker for mac for containeriation of applications and resources needed to run applications.
 Once downloaded, the following commands can be used:
+
 `docker ps -a`
+
 Lists all docker processes 
+
+`docker images`
+
+- Lists the most recently created docker images (created from Dockerfiles or downloaded)
+
+`docker build --tag [image-name] [docker-file-location]`
+
+- Builds the image as specified in the instructions in the Dockerfile
