@@ -4,7 +4,8 @@ Install or setup the following elements for complete local development environme
 
 1. [Editors](#editors)
 2. [Git/Github](#git-github)
-3. [Cloud Stuff](#cloud)
+3. [Cloud Resources](#cloud)
+4. [Docker](#docker)
 
 
 ## Editors
@@ -28,3 +29,9 @@ Install or setup the following elements for complete local development environme
 D&A uses the following cloud-based tools:
 - Azure: blob storage, virtual machines, other resources
 - Postgres/Citus: cloud storage database used by applications (dev, stage, and prod instances)
+
+## Docker
+Download docker for mac for containeriation of applications and resources needed to run applications.
+Once downloaded, the following commands can be used:
+`docker ps -a`
+Lists all docker processes 
