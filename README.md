@@ -7,7 +7,7 @@ Install or setup the following elements for complete local development environme
 3. [Cloud Resources](#cloud-stuff)
 4. [Docker](#docker)
 5. [Local Instances of Applications/Tools for Testing](#local-instances)
-6. [Python Development](#python-devt)
+6. [Python](#python-dev)
 
 <a name="editors"></a>
 ## Editors
@@ -78,6 +78,6 @@ RabbitMQ is an open-source messaging service. It accepts, stores, and forwards b
 - Set up via the [sonarqube docker image](https://hub.docker.com/_/sonarqube)
 
 <a name="python-dev"></a>
-## Python Development
+## Python
 
 
