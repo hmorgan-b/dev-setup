@@ -9,6 +9,7 @@ Install or setup the following elements for complete local development environme
 
 ## Editors
 **vim**
+- Comes pre-installed on mac, just need to customize to your liking 
 - See .vimrc file for configuration settings for some settings that do not come as standard vim is initialized
 - Access this file in a terminal by `vi ~/.vimrc` 
 - Google additional vim settings to further customize
@@ -19,5 +20,11 @@ Install or setup the following elements for complete local development environme
 - Has ability to performs linting and debugging, also has spellcheck and other features to alleviate stupid mistakes 
 
 ## Git/Github
+- Create a Github account for business use, sign in 
+- Upload SSH public key to allow SSH terminal access
+- See Confluence pages for version control workflow, including branch naming protocols, pull requests, and code review process
 
 ## Cloud Stuff
+D&A uses the following cloud-based tools:
+- Azure: blob storage, virtual machines, other resources
+- Postgres/Citus: cloud storage database used by applications (dev, stage, and prod instances)
