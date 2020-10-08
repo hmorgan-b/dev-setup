@@ -3,11 +3,11 @@
 Install or setup the following elements for complete local development environment. 
 
 1. [Editors](#editors)
-2. [Git/Github](#git-github)
-3. [Cloud Resources](#cloud)
+2. [Git/Github](#git/github)
+3. [Cloud Resources](#cloud stuff)
 4. [Docker](#docker)
-5. [Local Instances of Applications/Tools for Testing](#local-instances)
-6. [Python Development](#python-dev)
+5. [Local Instances of Applications/Tools for Testing](#local instances of applications/tools used for testing)
+6. [Python Development](#python development)
 
 
 ## Editors
