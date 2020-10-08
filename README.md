@@ -22,6 +22,7 @@ Install or setup the following elements for complete local development environme
 - Has a lot of extensions/plugins to help customize experience and provides more tools for development
 - Has ability to performs linting and debugging, also has spellcheck and other features to alleviate stupid mistakes 
 
+<a name="git-github"></a>
 ## Git/Github
 - Create a Github account for business use, sign in 
 - Upload SSH public key to allow SSH terminal access
