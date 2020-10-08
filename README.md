@@ -36,7 +36,7 @@ Once downloaded, the following commands can be used:
 
 `docker ps -a`
 
-Lists all docker processes 
+- Lists all docker processes 
 
 `docker images`
 
@@ -45,3 +45,17 @@ Lists all docker processes
 `docker build --tag [image-name] [docker-file-location]`
 
 - Builds the image as specified in the instructions in the Dockerfile
+
+`docker run [image-name] -p 8080:80 --name [hello] -d`
+
+- Runs a Docker container derived from image (image-name)
+- Maps local port 8080 to port 80 of container, to expose the container to the outside world and allow access from a browser. In this case, navigate in a browser to localhost:8080 to see application running
+- The -d tag tells the container to run as a process in the backgound 
+
+`docker-compose up`
+
+- Used when you want to run a combination of applications, databases, etc. in coordination with each other in separate containers
+- This command "composes" all of the Docker containers together
+- Looks at the current directory, prepends the name of the current directory to the Dockerfile image name (as specified in docker-compose.yml, or similar)
+- Builds images and runs containers all in one command
+
