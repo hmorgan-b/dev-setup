@@ -15,10 +15,10 @@ Install or setup the following elements for complete local development environme
 - Comes pre-installed on mac, just need to customize to your liking 
 - See .vimrc file for configuration settings for some settings that do not come as standard vim is initialized
 - Access this file in a terminal by `vi ~/.vimrc` 
-- Google additional vim settings to further customize
+- Google additional vim settings to further customizations
 
 **VS Code**
-- Makes programming easier at times because of ease of seeing file/folder tree in the left margin 
+- Makes things easier because of ease of seeing file/folder tree in the left margin 
 - Has a lot of extensions/plugins to help customize experience and provides more tools for development
 - Has ability to performs linting and debugging, also has spellcheck and other features to alleviate stupid mistakes 
 
@@ -37,6 +37,8 @@ D&A uses the following cloud-based tools:
 <a name="docker"></a>
 ## Docker
 Download docker for mac for containerization of applications and resources needed to run applications. A Docker image serves as a blueprint for creating containers that will host a certain application or service.
+
+### General Docker Usage
 Once downloaded, the following commands can be used:
 
 `docker ps -a`
@@ -47,6 +49,14 @@ Once downloaded, the following commands can be used:
 
 - Lists the most recently created docker repositories containing images (created from Dockerfiles or downloaded)
 
+`docker start [container-name]`
+- Starts an existing Docker container (one that appears when you list all processes as explained above)
+
+`docker stop [container-name]`
+- Stops a running Docker container, but does not remove it
+
+### Running New Docker Containers
+
 `docker build --tag [image-name] [docker-file-location]`
 
 - Builds the image as specified in the instructions in the Dockerfile
@@ -56,6 +66,8 @@ Once downloaded, the following commands can be used:
 - Creates and runs a Docker container derived from image (image-name)
 - Maps local port 8080 to port 80 of container, to expose the container to the outside world and allow access from a browser. In this case, navigate in a browser to localhost:8080 to see application running
 - The -d tag tells the container to run as a process in the backgound 
+
+### Other Useful Docker Stuff
 
 `docker-compose up`
 
